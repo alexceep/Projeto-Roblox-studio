@@ -16,9 +16,8 @@ O objetivo foi corrigir bugs existentes, melhorar a lógica de funcionamento e g
 ### 🪙 Sistema de Moedas
 
 **Problemas anteriores:**
-- Moedas podiam ser coletadas mais de uma vez
+- Moedas não eram coletadas
 - Contador não atualizava corretamente
-- Possível conflito entre jogadores
 
 **Correções aplicadas:**
 - Implementação de verificação para evitar coleta duplicada
@@ -31,15 +30,14 @@ O objetivo foi corrigir bugs existentes, melhorar a lógica de funcionamento e g
 ### 🚀 Sistema de Super Jump
 
 **Problemas anteriores:**
-- Jogador conseguia comprar sem ter moedas suficientes
+- Jogador nao conseguia comprar mesmo tendo moedas suficientes
 - Super Jump não aplicava corretamente
-- Compra podia ser repetida infinitamente
+- Não descontava no saldo de moedas
 
 **Correções aplicadas:**
 - Verificação de saldo antes da compra
 - Controle para impedir compras duplicadas
 - Aplicação correta do aumento de JumpPower
-- Estrutura de validação no servidor para maior segurança
 
 ---
 
@@ -48,7 +46,6 @@ O objetivo foi corrigir bugs existentes, melhorar a lógica de funcionamento e g
 - Roblox Studio
 - Lua (Linguagem de Script do Roblox)
 - Leaderstats
-- RemoteEvents (se aplicável)
 - Manipulação de propriedades do Humanoid
 
 ---
@@ -59,12 +56,6 @@ O objetivo foi corrigir bugs existentes, melhorar a lógica de funcionamento e g
 - Corrigir falhas de lógica
 - Aplicar boas práticas de programação
 - Garantir segurança contra exploits básicos
-
----
-
-## 📷 Demonstração
-
-*(Você pode adicionar aqui prints do jogo ou GIFs)*
 
 ---
 
